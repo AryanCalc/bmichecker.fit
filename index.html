@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title (Long & Optimized) -->
+    <title>BMI Calculator Online – Free & Accurate BMI Checker</title>
+
+    <!-- Meta Description (Long-tail focused) -->
+    <meta name="description" content="BMI Checker.fit provides a free and accurate BMI calculator online. Calculate Body Mass Index using kg, lb, cm or feet & inches. Best BMI checker for men and women with instant results and health guidance.">
+
+    <!-- Long-tail SEO Keywords -->
+    <meta name="keywords" content="
+        bmi calculator online,
+        bmi checker online free,
+        body mass index calculator for men and women,
+        bmi calculator kg cm,
+        bmi calculator feet inches,
+        bmi calculator lb,
+        accurate bmi calculator online,
+        healthy bmi range calculator,
+        bmi calculator india,
+        bmi checker fit
+    ">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bmichecker.fit/">
+
+    <!-- Open Graph (Social Media SEO) -->
+    <meta property="og:title" content="BMI Calculator Online – Accurate BMI Checker (bmichecker.fit)">
+    <meta property="og:description" content="Check your BMI instantly with bmichecker.fit. Free BMI calculator for men & women using kg, lb, cm or feet. Accurate and easy to use.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bmichecker.fit/">
+    <meta property="og:image" content="https://bmichecker.fit/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BMI Calculator Online – Free BMI Checker">
+    <meta name="twitter:description" content="Use bmichecker.fit to calculate your BMI online. Supports kg, lb, cm & feet. Accurate BMI calculator for men and women.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="BMI Checker">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu">
+
+            <!-- Calculator Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Calculator</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Standard BMI Calculator</a>
+                    <a href="bmi-calculator-men.html">BMI Calculator for Men</a>
+                    <a href="bmi-calculator-women.html">BMI Calculator for Women</a>
+
+                    <hr>
+
+                    <!-- Unit Based Calculators -->
+                    <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+                    <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+                    <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+
+                    <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+                    <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+                    <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+                </div>
+            </div>
+
+            <!-- Blog Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                    <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+               
+                </div>
+            </div>
+
+            <!-- Normal Pages -->
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close" onclick="toggleMenu()">✕</div>
+
+            <strong>BMI Calculators</strong>
+            <a href="index.html">Standard BMI Calculator</a>
+            
+
+            <hr>
+
+            <strong>By Units</strong>
+            <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+            <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+            <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+            <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+            <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+            <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+
+            <hr>
+
+            <strong>Blog</strong>
+            <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+            
+
+            <hr>
+
+            <strong>Information</strong>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="container">
+
+        <!-- ===== Calculator Box ===== -->
+        <div class="calculator-box">
+
+            <h1>BMI Calculator</h1>
+            <p class="subtitle">
+                Calculate your Body Mass Index using height and weight.
+            </p>
+
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age (Years)</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <!-- Height -->
+            <div class="form-group">
+                <label for="height">Height</label>
+                <input type="number" id="height" placeholder="Enter height">
+                <select id="heightUnit">
+                    <option value="cm">cm</option>
+                    <option value="inch">inch</option>
+                    <option value="feet">feet & inch</option>
+                </select>
+            </div>
+
+            <!-- Feet & Inches -->
+            <div class="form-group" id="feetBox" style="display:none;">
+                <input type="number" id="feet" placeholder="Feet">
+                <input type="number" id="inches" placeholder="Inches">
+            </div>
+
+            <!-- Weight -->
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" placeholder="Enter weight">
+                <select id="weightUnit">
+                    <option value="kg">kg</option>
+                    <option value="lb">lb</option>
+                </select>
+            </div>
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+
+            <div id="result"></div>
+
+        </div>
+        <!-- ===== /Calculator Box ===== -->
+
+        <!-- ===== Content Section ===== -->
+        <section class="content-section">
+            <h2>What Is BMI and Why It Matters</h2>
+            <p>
+                Body Mass Index (BMI) is a simple and widely used method to understand whether
+                your body weight is healthy for your height. It uses your height and weight to
+                calculate a number that helps classify you as underweight, normal weight,
+                overweight, or obese. BMI is commonly used by health professionals as a quick
+                screening tool to identify potential weight-related health risks.
+            </p>
+
+            <h2>How This BMI Calculator Works</h2>
+            <p>
+                This BMI calculator allows you to calculate your Body Mass Index by entering
+                your age, gender, height, and weight. You can choose different measurement
+                units such as kilograms or pounds for weight and centimeters, inches, or feet
+                for height. The calculator automatically converts all values and provides an
+                accurate BMI result instantly.
+            </p>
+
+            <h2>BMI Categories Explained</h2>
+            <p>
+                After calculating your BMI, the result falls into one of the standard BMI
+                categories. These categories are used worldwide as general guidelines:
+            </p>
+            <ul>
+                <li><strong>Underweight:</strong> BMI below 18.5</li>
+                <li><strong>Normal weight:</strong> BMI between 18.5 and 24.9</li>
+                <li><strong>Overweight:</strong> BMI between 25 and 29.9</li>
+                <li><strong>Obese:</strong> BMI 30 or above</li>
+            </ul>
+
+            <h2>Age and Gender Considerations</h2>
+            <p>
+                BMI interpretation can vary depending on age and gender. For adults, BMI is a
+                useful general indicator of healthy weight. However, for children and
+                teenagers under 18, BMI depends on age- and gender-specific percentiles.
+                That is why this calculator provides a warning message for users below 18
+                years of age.
+            </p>
+
+            <h2>Different Units Supported</h2>
+            <p>
+                To make the calculator convenient for users around the world, this BMI
+                calculator supports multiple measurement systems. You can calculate BMI using
+                kilograms or pounds for weight and centimeters, inches, or feet for height.
+                Dedicated pages are also available for specific unit combinations to make
+                calculation even easier.
+            </p>
+
+            <h2>Is BMI Always Accurate?</h2>
+            <p>
+                BMI is a helpful screening tool, but it does not directly measure body fat,
+                muscle mass, or overall fitness. Athletes or individuals with high muscle mass
+                may have a higher BMI even if they are healthy. Therefore, BMI should be used
+                as a general guideline rather than a medical diagnosis.
+            </p>
+
+            <h2>Who Can Use This BMI Calculator</h2>
+            <p>
+                This BMI calculator is designed for adults who want a quick and easy way to
+                check their weight status. It is suitable for both men and women and supports
+                different unit preferences. However, pregnant individuals and people with
+                specific medical conditions should consult a healthcare professional for
+                personalized advice.
+            </p>
+
+            <h2>Important Disclaimer</h2>
+            <p>
+                The information provided by this BMI calculator is for educational and
+                informational purposes only. It should not be considered medical advice.
+                Always consult a qualified healthcare professional for personalized health
+                guidance and recommendations.
+            </p>
+            
+            <div class="bmi-grid">
+
+                <a href="bmi-calculator-men.html" class="bmi-card">
+                    <h3>BMI Calculator for Men</h3>
+                    <p>Calculate BMI based on male health standards.</p>
+                </a>
+
+                <a href="bmi-calculator-women.html" class="bmi-card">
+                    <h3>BMI Calculator for Women</h3>
+                    <p>Understand BMI according to female body guidelines.</p>
+                </a>
+
+                <a href="bmi-calculator-kg-cm.html" class="bmi-card">
+                    <h3>BMI Calculator (KG & CM)</h3>
+                    <p>Metric system calculator for height and weight.</p>
+                </a>
+
+                <a href="bmi-calculator-kg-feet.html" class="bmi-card">
+                    <h3>BMI Calculator (KG & Feet)</h3>
+                    <p>Best for users measuring height in feet.</p>
+                </a>
+
+                <a href="bmi-calculator-lb-inch.html" class="bmi-card">
+                    <h3>BMI Calculator (LB & Inches)</h3>
+                    <p>Imperial unit calculator commonly used in the US.</p>
+                </a>
+
+                <a href="bmi-calculator-lb-feet.html" class="bmi-card">
+                    <h3>BMI Calculator (LB & Feet)</h3>
+                    <p>Alternative option for imperial measurements.</p>
+                </a>
+
+            </div>
+
+           
+            <div class="bmi-grid">
+                    <!-- cards -->
+                </div>
+
+                <!-- 🔽 YAHI FAQ ADD KARNA HAI 🔽 -->
+                <h2>Frequently Asked Questions (FAQ)</h2>
+
+                <h3>What is BMI?</h3>
+                <p>
+                    BMI (Body Mass Index) is a measurement that helps assess whether a person
+                    has a healthy body weight based on height and weight.
+                </p>
+
+                <h3>Is BMI Calculator accurate?</h3>
+                <p>
+                    BMI Checker uses the standard BMI formula recommended by health organizations.
+                </p>
+
+                <h3>Which BMI calculator should I use?</h3>
+                <p>
+                    You can choose a BMI calculator based on your gender or preferred
+                    measurement units such as kg, lb, cm, feet, or inches.
+                </p>
+
+                <h3>Does BMI Checker store my data?</h3>
+                <p>
+                    No. All calculations are processed locally and no personal data is stored.
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2025 BMI Checker</p>
+
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
