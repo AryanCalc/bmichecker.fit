@@ -132,27 +132,12 @@ body {
     height: 3px;
     background: #fff;
 }
-
-/* ================= MOBILE MENU ================= */
-.mobile-menu {
-    display: none;
-    background: #2c3e50;
-    padding: 20px;
-}
-
-.mobile-menu a {
-    display: block;
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-
-}
-/* ================= MOBILE MENU (FINAL FIX) ================= */
+/* ================= MOBILE MENU (FINAL – WORKING) ================= */
 .mobile-menu {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 75%;          /* 👈 yahin se choda / size control */
+    width: 75%;          /* yahin se size control */
     max-width: 300px;
     height: 100vh;
     background: #2c3e50;
@@ -162,12 +147,10 @@ body {
     transition: right 0.3s ease-in-out;
 }
 
-/* Menu open */
 .mobile-menu.active {
     right: 0;
 }
 
-/* Links */
 .mobile-menu a {
     display: block;
     padding: 8px 0;
@@ -175,19 +158,16 @@ body {
     text-decoration: none;
 }
 
-/* Section headings */
 .mobile-menu strong {
     color: #9ecbff;
 }
 
-/* Divider */
 .mobile-menu hr {
     border: none;
     border-top: 1px solid #445;
     margin: 12px 0;
 }
 
-/* Close (X) button */
 .menu-close {
     font-size: 26px;
     color: #fff;
@@ -196,26 +176,15 @@ body {
     margin-bottom: 15px;
 }
 
-/* Hamburger above menu */
 .hamburger {
     z-index: 10000;
 }
 
-/* Hide hamburger when menu open */
 body.menu-open .hamburger {
     display: none;
 }
 
 
-.mobile-menu strong {
-    color: #9ecbff;
-}
-
-.mobile-menu hr {
-    border: none;
-    border-top: 1px solid #445;
-    margin: 12px 0;
-}
 
 /* ================= MAIN CONTAINER ================= */
 .container {
@@ -439,3 +408,4 @@ select:focus {
     margin-bottom: 15px;
     line-height: 1.7;
 }
+
