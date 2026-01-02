@@ -99,6 +99,9 @@ function calculateBMI() {
         `<b>Your BMI:</b> ${bmi}<br>
          <b>Category:</b> ${category}<br><br>
          <small>${message}</small>`;
+
+    showBMIRange(Number(bmi), age);
+
 }
 
 /* ===== HEIGHT UNIT TOGGLE (FEET FIXED) ===== */
@@ -130,4 +133,60 @@ function toggleMenu() {
         menu.classList.toggle("active");
         document.body.classList.toggle("menu-open");
     }
+}
+
+function showBMIRange(bmi, age) {
+
+    const rangeBox = document.getElementById("bmiRangeBox");
+    const categoryText = document.getElementById("bmiCategory");
+    const childNote = document.getElementById("childNote");
+    const pointer = document.getElementById("bmiPointer");
+    const pointerValue = document.getElementById("bmiPointerValue");
+
+    if (!rangeBox || !categoryText || !pointer) return;
+
+    // RESET
+    rangeBox.style.display = "block";
+    if (childNote) childNote.style.display = "none";
+    pointer.style.display = "block";
+
+    document
+        .querySelectorAll(".bmi-bar span")
+        .forEach(el => el.classList.remove("active"));
+
+    pointerValue.textContent = bmi;
+
+    let percent = 0;
+
+    // ===== RANGE-WISE POSITIONING =====
+    if (bmi < 18.5) {
+        categoryText.textContent = "Underweight";
+        document.querySelector(".underweight").classList.add("active");
+
+        percent = (bmi / 18.5) * 25;
+
+    } else if (bmi < 25) {
+        categoryText.textContent = "Normal";
+        document.querySelector(".normal").classList.add("active");
+
+        percent = 25 + ((bmi - 18.5) / (25 - 18.5)) * 25;
+
+    } else if (bmi < 30) {
+        categoryText.textContent = "Overweight";
+        document.querySelector(".overweight").classList.add("active");
+
+        percent = 50 + ((bmi - 25) / (30 - 25)) * 25;
+
+    } else {
+        categoryText.textContent = "Obese";
+        document.querySelector(".obese").classList.add("active");
+
+        // cap obese visually till BMI 40
+        percent = 75 + (Math.min(bmi, 40) - 30) / (40 - 30) * 25;
+    }
+
+    // Clamp safety
+    percent = Math.max(0, Math.min(100, percent));
+
+    pointer.style.left = percent + "%";
 }
