@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= BASIC ================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= FAVICON ================= -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <!-- ================= SEO TITLE ================= -->
+    <title>BMI for Children: Healthy BMI Range, Percentiles & Growth Guide</title>
+
+    <!-- ================= META DESCRIPTION ================= -->
+    <meta name="description" content="BMI for children explained. Learn how BMI percentiles work for kids and teens, healthy BMI range by age and gender, and how parents can support healthy growth.">
+
+    <!-- ================= KEYWORDS (OPTIONAL) ================= -->
+    <meta name="keywords" content="bmi for children, bmi for kids, child bmi percentile, healthy bmi for children, bmi for teens, bmi growth chart">
+
+    <!-- ================= ROBOTS ================= -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- ================= CANONICAL ================= -->
+    <link rel="canonical" href="https://bmichecker.fit/bmi-for-children.html">
+
+    <!-- ================= OPEN GRAPH ================= -->
+    <meta property="og:title" content="BMI for Children: Percentiles & Healthy Growth">
+    <meta property="og:description" content="Understand BMI for children, how percentiles work, and what is considered a healthy BMI for kids and teens.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bmichecker.fit/bmi-for-children.html">
+    <meta property="og:image" content="https://bmichecker.fit/logo.png">
+    <meta property="og:site_name" content="BMI Checker">
+
+    <!-- ================= TWITTER CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BMI for Children: Healthy BMI Range & Percentiles">
+    <meta name="twitter:description" content="A complete guide to BMI for children and teens, including percentiles and healthy growth tips.">
+    <meta name="twitter:image" content="https://bmichecker.fit/logo.png">
+
+    <!-- ================= AUTHOR & LANGUAGE ================= -->
+    <meta name="author" content="BMI Checker">
+    <meta name="language" content="English">
+
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="BMI Checker">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu">
+
+            <!-- Calculator Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Calculator</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Standard BMI Calculator</a>
+                    <a href="bmi-calculator-men.html">BMI Calculator for Men</a>
+                    <a href="bmi-calculator-women.html">BMI Calculator for Women</a>
+
+                    <hr>
+
+                    <!-- Unit Based Calculators -->
+                    <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+                    <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+                    <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+
+                    <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+                    <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+                    <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+                </div>
+            </div>
+
+            <!-- Blog Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                    <a href="bmi-for-women.html">BMI Guide for Women</a>                                
+                    <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+                    <a href="what-is-bmi.html">What Is BMI? Meaning & Importance</a>
+                    <a href="how-to-calculate-bmi.html">How to Calculate BMI (Step by Step)</a>
+                    <a href="healthy-bmi-range.html">Healthy BMI Range Explained</a>
+                    <a href="bmi-chart.html">BMI Chart for Adults</a>
+                    <a href="is-bmi-accurate.html">Is BMI Accurate?</a>
+                    <a href="bmi-vs-body-fat.html">BMI vs Body Fat Percentage</a>
+                    <a href="how-to-reduce-bmi.html">How to Reduce BMI Naturally</a>
+                    <a href="bmi-limitations.html">Limitations of BMI</a>
+                    <a href="bmi-for-children.html">BMI for Children</a>
+                    <a href="bmi-for-seniors.html">BMI for Seniors</a>
+               
+                </div>
+            </div>
+
+            <!-- Normal Pages -->
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close" onclick="toggleMenu()">✕</div>
+
+            <strong>BMI Calculators</strong>
+            <a href="index.html">Standard BMI Calculator</a>
+            <a href="bmi-calculator-men.html">BMI Calculator for Men</a>
+            <a href="bmi-calculator-women.html">BMI Calculator for Women</a>
+
+            <hr>
+
+            <strong>By Units</strong>
+            <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+            <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+            <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+            <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+            <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+            <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+
+            <hr>
+
+            <strong>Blog</strong>
+                    <a href="bmi-for-women.html">BMI Guide for Women</a>                                
+                    <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+                    <a href="what-is-bmi.html">What Is BMI? Meaning & Importance</a>
+                    <a href="how-to-calculate-bmi.html">How to Calculate BMI (Step by Step)</a>
+                    <a href="healthy-bmi-range.html">Healthy BMI Range Explained</a>
+                    <a href="bmi-chart.html">BMI Chart for Adults</a>
+                    <a href="is-bmi-accurate.html">Is BMI Accurate?</a>
+                    <a href="bmi-vs-body-fat.html">BMI vs Body Fat Percentage</a>
+                    <a href="how-to-reduce-bmi.html">How to Reduce BMI Naturally</a>
+                    <a href="bmi-limitations.html">Limitations of BMI</a>
+                    <a href="bmi-for-children.html">BMI for Children</a>
+                    <a href="bmi-for-seniors.html">BMI for Seniors</a>
+            
+
+            <hr>
+
+            <strong>Information</strong>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="container">
+
+        
+        <!-- ===== Content Section ===== -->
+       <section class="content-section">
+
+            <h1>BMI for Children: Understanding Body Mass Index for Kids and Teens</h1>
+
+            <p>
+            BMI for children is an important tool used to understand whether a child’s weight is
+            healthy for their height and age. BMI stands for Body Mass Index, but unlike adults,
+            BMI for children is interpreted differently because children are still growing and
+            their body composition changes with age.
+            </p>
+
+            <p>
+            This guide explains BMI for children in simple terms, how it is calculated, how BMI
+            percentiles work, what is considered a healthy range, and why BMI should be used
+            carefully for kids and teenagers.
+            </p>
+
+            <h2>What Is BMI for Children?</h2>
+
+            <p>
+            BMI for children is a screening method used to assess weight status in children and
+            teenagers aged 2 to 19 years. It is calculated using the same formula as adult BMI,
+            but the result is interpreted using age- and gender-specific percentiles.
+            </p>
+
+            <p>
+            Because boys and girls grow at different rates, BMI values are compared with growth
+            charts to determine whether a child is underweight, healthy weight, overweight, or
+            obese.
+            </p>
+
+            <h2>How Is BMI for Children Calculated?</h2>
+
+            <p>
+            The BMI formula for children is the same as for adults:
+            </p>
+
+            <p><strong>BMI = Weight (kg) ÷ Height² (meters)</strong></p>
+
+            <p>
+            However, the key difference is what happens after the BMI number is calculated. For
+            children, the BMI value is plotted on a BMI-for-age chart to find the percentile.
+            </p>
+
+            <h2>What Are BMI Percentiles?</h2>
+
+            <p>
+            BMI percentiles compare a child’s BMI with other children of the same age and gender.
+            The percentile shows how a child’s BMI ranks compared to peers.
+            </p>
+
+            <p>
+            For example, a child in the 60th percentile weighs more relative to height than 60%
+            of children of the same age and gender.
+            </p>
+
+            <h2>BMI Categories for Children</h2>
+
+            <p>
+            Based on BMI percentiles, children are placed into the following categories:
+            </p>
+
+            <ul>
+            <li><strong>Underweight:</strong> Below the 5th percentile</li>
+            <li><strong>Healthy weight:</strong> 5th percentile to less than the 85th percentile</li>
+            <li><strong>Overweight:</strong> 85th percentile to less than the 95th percentile</li>
+            <li><strong>Obese:</strong> 95th percentile or above</li>
+            </ul>
+
+            <p>
+            These categories help identify potential weight-related health risks in children.
+            </p>
+
+            <h2>What Is a Healthy BMI for Children?</h2>
+
+            <p>
+            There is no single healthy BMI number for all children. A healthy BMI depends on the
+            child’s age and gender. This is why BMI-for-age percentiles are used instead of fixed
+            numbers.
+            </p>
+
+            <p>
+            A child with a BMI between the 5th and 85th percentile is generally considered to be
+            in a healthy weight range.
+            </p>
+
+            <h2>Why BMI Is Important for Children’s Health</h2>
+
+            <p>
+            BMI helps identify children who may be at risk of weight-related health issues. Both
+            low and high BMI percentiles can be linked to health concerns.
+            </p>
+
+            <p>
+            Underweight children may face nutritional deficiencies and delayed growth, while
+            children with high BMI percentiles may have a higher risk of developing lifestyle-
+            related health problems later in life.
+            </p>
+
+            <h2>Limitations of BMI for Children</h2>
+
+            <p>
+            While BMI is useful, it has limitations. BMI does not directly measure body fat and
+            does not account for muscle mass or body composition.
+            </p>
+
+            <p>
+            Some children may have higher BMI due to muscle development, while others may have
+            normal BMI but poor nutrition or low physical activity.
+            </p>
+
+            <h2>BMI and Growth Patterns</h2>
+
+            <p>
+            Children go through growth spurts at different ages. Temporary changes in BMI are
+            normal during growth and puberty.
+            </p>
+
+            <p>
+            Because of this, BMI trends over time are more important than a single BMI reading.
+            Healthcare professionals often look at BMI patterns rather than one measurement.
+            </p>
+
+            <h2>BMI for Children vs BMI for Adults</h2>
+
+            <p>
+            The main difference between BMI for children and adults is interpretation. Adult BMI
+            uses fixed categories, while children’s BMI uses percentiles based on age and gender.
+            </p>
+
+            <p>
+            This makes children’s BMI more flexible and appropriate for growing bodies.
+            </p>
+
+            <h2>How Parents Can Use BMI Information</h2>
+
+            <p>
+            Parents can use BMI as a general guide to understand their child’s growth and weight
+            status. It should not be used to label or judge a child.
+            </p>
+
+            <p>
+            Healthy habits such as balanced nutrition, regular physical activity, adequate sleep,
+            and limited screen time support healthy growth regardless of BMI category.
+            </p>
+
+            <h2>When to Be Concerned About a Child’s BMI</h2>
+
+            <p>
+            Parents should pay attention if a child’s BMI is consistently very low or very high,
+            or if there are sudden changes in BMI percentile.
+            </p>
+
+            <p>
+            In such cases, consulting a qualified healthcare professional can help determine
+            whether further evaluation is needed.
+            </p>
+
+            <h2>Supporting a Healthy BMI in Children</h2>
+
+            <p>
+            Maintaining a healthy BMI in children focuses on overall lifestyle rather than weight
+            loss.
+            </p>
+
+            <ul>
+            <li>Encourage balanced meals with fruits and vegetables</li>
+            <li>Promote regular physical activity and outdoor play</li>
+            <li>Ensure adequate sleep</li>
+            <li>Limit sugary snacks and drinks</li>
+            </ul>
+
+            <h2>Final Thoughts on BMI for Children</h2>
+
+            <p>
+            BMI for children is a helpful screening tool when used correctly. It provides insight
+            into growth patterns and potential health risks, but it does not define a child’s
+            overall health.
+            </p>
+
+            <p>
+            Understanding BMI percentiles and focusing on healthy habits helps support children’s
+            growth and well-being in a positive and balanced way.
+            </p>
+
+            <p>
+            For personalized guidance, parents should always consult qualified healthcare
+            professionals.
+            </p>
+
+            
+
+
+            
+            <div class="bmi-grid">
+
+                <a href="index.html" class="bmi-card">
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate BMI easily using height and weight.</p>
+                </a>
+
+                <a href="what-is-bmi.html" class="bmi-card">
+                    <h3>What Is BMI?</h3>
+                    <p>Understand the basic meaning and purpose of BMI.</p>
+                </a>
+
+                <a href="how-to-calculate-bmi.html" class="bmi-card">
+                    <h3>How to Calculate BMI</h3>
+                    <p>Learn step-by-step BMI calculation with examples.</p>
+                </a>
+
+                <a href="bmi-chart.html" class="bmi-card">
+                    <h3>BMI Chart</h3>
+                    <p>View BMI categories and healthy ranges.</p>
+                </a>
+
+                <a href="healthy-bmi-range.html" class="bmi-card">
+                    <h3>Healthy BMI Range</h3>
+                    <p>Find out what BMI range is considered healthy.</p>
+                </a>
+
+                <a href="bmi-for-men-guide.html" class="bmi-card">
+                    <h3>BMI for Men</h3>
+                    <p>Learn BMI standards and health factors for men.</p>
+                </a>
+
+                <a href="bmi-for-women.html" class="bmi-card">
+                    <h3>BMI for Women</h3>
+                    <p>Understand BMI range and health considerations for women.</p>
+                </a>
+
+                <a href="bmi-limitations.html" class="bmi-card">
+                    <h3>Limitations of BMI</h3>
+                    <p>Understand where BMI may not be accurate.</p>
+                </a>
+
+            </div>
+
+           
+           
+                <h2>Frequently Asked Questions (FAQs)</h2>
+
+                <h3>What is BMI for children?</h3>
+                <p>
+                BMI for children is a screening tool used to assess whether a child’s weight is
+                healthy for their height, age, and gender. It is interpreted using BMI-for-age
+                percentiles.
+                </p>
+
+                <h3>Is BMI for children calculated differently than adults?</h3>
+                <p>
+                The BMI formula is the same, but children’s BMI results are compared with age- and
+                gender-specific growth charts instead of fixed BMI categories.
+                </p>
+
+                <h3>What is a healthy BMI percentile for children?</h3>
+                <p>
+                A BMI percentile between the 5th and 85th percentile is generally considered healthy
+                for children and teenagers.
+                </p>
+
+                <h3>Can BMI be used for children under 2 years?</h3>
+                <p>
+                No. BMI is typically used for children aged 2 years and older. Other growth
+                measurements are used for infants.
+                </p>
+
+                <h3>Why does BMI for children depend on age and gender?</h3>
+                <p>
+                Children grow at different rates, and boys and girls develop differently. Age- and
+                gender-based percentiles make BMI more accurate for growing bodies.
+                </p>
+
+                <h3>Can a child have a normal BMI but still be unhealthy?</h3>
+                <p>
+                Yes. BMI does not measure nutrition quality, physical activity, or fitness level.
+                Healthy habits are important regardless of BMI.
+                </p>
+
+                <h3>Should parents worry if a child’s BMI is high?</h3>
+                <p>
+                A high BMI percentile may indicate increased health risk, but it should be evaluated
+                over time and discussed with a healthcare professional.
+                </p>
+
+                <h3>Is BMI accurate for very active children?</h3>
+                <p>
+                BMI may be less accurate for very athletic children with higher muscle mass. It
+                should be used as a general guideline, not a diagnosis.
+                </p>
+
+                <h3>How often should a child’s BMI be checked?</h3>
+                <p>
+                BMI is usually checked during routine health visits. Frequent checking at home is
+                not necessary unless advised by a professional.
+                </p>
+
+                <h3>How can parents support a healthy BMI in children?</h3>
+                <p>
+                Encouraging balanced meals, regular physical activity, adequate sleep, and positive
+                lifestyle habits helps support healthy growth and BMI.
+                </p>
+
+
+
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2025 BMI Checker</p>
+
+            <p style="font-size:13px; color:#777; margin-top:8px;">
+            Disclaimer: This website provides informational content only and is not a substitute for professional medical advice.
+            </p>
+
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

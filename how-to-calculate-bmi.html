@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= BASIC ================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= FAVICON ================= -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <!-- ================= SEO TITLE ================= -->
+    <title>How to Calculate BMI (Body Mass Index) – Formula, Steps & Examples</title>
+
+    <!-- ================= META DESCRIPTION ================= -->
+    <meta name="description" content="Learn how to calculate BMI step by step. Understand the BMI formula, calculation using kg, cm, feet, inches, examples, BMI categories, and health meaning.">
+
+    <!-- ================= KEYWORDS (OPTIONAL) ================= -->
+    <meta name="keywords" content="how to calculate bmi, bmi formula, bmi calculation steps, bmi calculator formula, calculate bmi manually, bmi examples">
+
+    <!-- ================= ROBOTS ================= -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- ================= CANONICAL ================= -->
+    <link rel="canonical" href="https://bmichecker.fit/how-to-calculate-bmi.html">
+
+    <!-- ================= OPEN GRAPH ================= -->
+    <meta property="og:title" content="How to Calculate BMI – Formula & Step-by-Step Guide">
+    <meta property="og:description" content="Step-by-step guide to calculate BMI using height and weight. Learn BMI formula, examples, and BMI categories.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bmichecker.fit/how-to-calculate-bmi.html">
+    <meta property="og:image" content="https://bmichecker.fit/logo.png">
+    <meta property="og:site_name" content="BMI Checker">
+
+    <!-- ================= TWITTER CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Calculate BMI – BMI Formula Explained">
+    <meta name="twitter:description" content="Learn how to calculate BMI manually and online. Includes formula, steps, examples, and BMI categories.">
+    <meta name="twitter:image" content="https://bmichecker.fit/logo.png">
+
+    <!-- ================= AUTHOR & LANGUAGE ================= -->
+    <meta name="author" content="BMI Checker">
+    <meta name="language" content="English">
+
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="BMI Checker">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu">
+
+            <!-- Calculator Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Calculator</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Standard BMI Calculator</a>
+                    <a href="bmi-calculator-men.html">BMI Calculator for Men</a>
+                    <a href="bmi-calculator-women.html">BMI Calculator for Women</a>
+
+                    <hr>
+
+                    <!-- Unit Based Calculators -->
+                    <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+                    <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+                    <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+
+                    <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+                    <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+                    <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+                </div>
+            </div>
+
+            <!-- Blog Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                    <a href="bmi-for-women.html">BMI Guide for Women</a>                                
+                    <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+                    <a href="what-is-bmi.html">What Is BMI? Meaning & Importance</a>
+                    <a href="how-to-calculate-bmi.html">How to Calculate BMI (Step by Step)</a>
+                    <a href="healthy-bmi-range.html">Healthy BMI Range Explained</a>
+                    <a href="bmi-chart.html">BMI Chart for Adults</a>
+                    <a href="is-bmi-accurate.html">Is BMI Accurate?</a>
+                    <a href="bmi-vs-body-fat.html">BMI vs Body Fat Percentage</a>
+                    <a href="how-to-reduce-bmi.html">How to Reduce BMI Naturally</a>
+                    <a href="bmi-limitations.html">Limitations of BMI</a>
+                    <a href="bmi-for-children.html">BMI for Children</a>
+                    <a href="bmi-for-seniors.html">BMI for Seniors</a>
+               
+                </div>
+            </div>
+
+            <!-- Normal Pages -->
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close" onclick="toggleMenu()">✕</div>
+
+            <strong>BMI Calculators</strong>
+            <a href="index.html">Standard BMI Calculator</a>
+            <a href="bmi-calculator-men.html">BMI Calculator for Men</a>
+            <a href="bmi-calculator-women.html">BMI Calculator for Women</a>
+
+            <hr>
+
+            <strong>By Units</strong>
+            <a href="bmi-calculator-kg-cm.html">BMI Calculator (KG & CM)</a>
+            <a href="bmi-calculator-kg-feet.html">BMI Calculator (KG & Feet)</a>
+            <a href="bmi-calculator-kg-inch.html">BMI Calculator (KG & Inches)</a>
+            <a href="bmi-calculator-lb-cm.html">BMI Calculator (LB & CM)</a>
+            <a href="bmi-calculator-lb-inch.html">BMI Calculator (LB & Inches)</a>
+            <a href="bmi-calculator-lb-feet.html">BMI Calculator (LB & Feet)</a>
+
+            <hr>
+
+            <strong>Blog</strong>
+                    <a href="bmi-for-women.html">BMI Guide for Women</a>                                
+                    <a href="bmi-for-men-guide.html">BMI Guide for Men</a>
+                    <a href="what-is-bmi.html">What Is BMI? Meaning & Importance</a>
+                    <a href="how-to-calculate-bmi.html">How to Calculate BMI (Step by Step)</a>
+                    <a href="healthy-bmi-range.html">Healthy BMI Range Explained</a>
+                    <a href="bmi-chart.html">BMI Chart for Adults</a>
+                    <a href="is-bmi-accurate.html">Is BMI Accurate?</a>
+                    <a href="bmi-vs-body-fat.html">BMI vs Body Fat Percentage</a>
+                    <a href="how-to-reduce-bmi.html">How to Reduce BMI Naturally</a>
+                    <a href="bmi-limitations.html">Limitations of BMI</a>
+                    <a href="bmi-for-children.html">BMI for Children</a>
+                    <a href="bmi-for-seniors.html">BMI for Seniors</a>
+
+            <hr>
+
+            <strong>Information</strong>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="container">
+
+        
+        <!-- ===== Content Section ===== -->
+        <section class="content-section">
+
+                <h1>How to Calculate BMI: Step-by-Step Guide with Examples</h1>
+
+                <p>
+                Learning how to calculate BMI is one of the simplest ways to understand whether your
+                body weight is healthy for your height. BMI stands for <strong>Body Mass Index</strong>,
+                and it is widely used by doctors, fitness experts, and health organizations to
+                classify weight into different categories.
+                </p>
+
+                <p>
+                BMI calculation does not require any medical tests or equipment. With just your
+                height and weight, you can easily calculate your BMI at home and get a basic idea
+                about your weight status and possible health risks.
+                </p>
+
+                <h2>What Is BMI?</h2>
+
+                <p>
+                BMI, or Body Mass Index, is a numerical value calculated using your height and weight.
+                It helps determine whether you are underweight, normal weight, overweight, or obese.
+                BMI is mainly used as a screening tool and not as a medical diagnosis.
+                </p>
+
+                <p>
+                Because it is simple and quick, BMI is commonly used for health awareness and weight
+                management planning.
+                </p>
+
+                <h2>The BMI Formula Explained</h2>
+
+                <p>
+                The standard BMI formula used worldwide is:
+                </p>
+
+                <p><strong>BMI = Weight (kg) ÷ Height² (meters)</strong></p>
+
+                <p>
+                This means your weight in kilograms is divided by the square of your height in
+                meters. The result is your BMI value.
+                </p>
+
+                <h2>How to Calculate BMI Step by Step</h2>
+
+                <p>
+                Follow these simple steps to calculate your BMI manually:
+                </p>
+
+                <ol>
+                <li>Measure your weight in kilograms (kg).</li>
+                <li>Measure your height in meters (m).</li>
+                <li>Multiply your height by itself (height × height).</li>
+                <li>Divide your weight by the squared height.</li>
+                </ol>
+
+                <p>
+                The final number you get is your BMI.
+                </p>
+
+                <h2>BMI Calculation Example</h2>
+
+                <p>
+                Let’s understand BMI calculation with an example:
+                </p>
+
+                <ul>
+                <li>Weight: 68 kg</li>
+                <li>Height: 1.70 meters</li>
+                </ul>
+
+                <p>
+                First, square the height:
+                </p>
+
+                <p>1.70 × 1.70 = 2.89</p>
+
+                <p>
+                Now divide the weight by the squared height:
+                </p>
+
+                <p>
+                BMI = 68 ÷ 2.89 = 23.5
+                </p>
+
+                <p>
+                A BMI of 23.5 falls within the <strong>normal weight</strong> category.
+                </p>
+
+                <h2>How to Calculate BMI Using Different Units</h2>
+
+                <p>
+                People around the world use different units for height and weight. BMI can still be
+                calculated accurately by converting these units properly.
+                </p>
+
+                <h3>BMI Calculation Using KG and CM</h3>
+
+                <p>
+                If your weight is in kilograms and height is in centimeters, convert height into
+                meters by dividing it by 100.
+                </p>
+
+                <p>
+                Example: 170 cm = 1.70 meters
+                </p>
+
+                <p>
+                Then apply the standard BMI formula.
+                </p>
+
+                <h3>BMI Calculation Using Pounds and Inches</h3>
+
+                <p>
+                If you use pounds (lb) and inches (in), use this formula:
+                </p>
+
+                <p><strong>BMI = (Weight in lb ÷ Height² in inches) × 703</strong></p>
+
+                <p>
+                The number 703 is used to convert imperial units into the BMI scale.
+                </p>
+
+                <h3>BMI Calculation Using Feet and Inches</h3>
+
+                <p>
+                If your height is in feet and inches, first convert it into total inches or meters.
+                Then use the appropriate BMI formula based on your weight unit.
+                </p>
+
+                <h2>BMI Categories and Their Meaning</h2>
+
+                <p>
+                Once you calculate your BMI, the result falls into one of the standard BMI categories:
+                </p>
+
+                <ul>
+                <li><strong>Underweight:</strong> BMI below 18.5</li>
+                <li><strong>Normal weight:</strong> BMI between 18.5 and 24.9</li>
+                <li><strong>Overweight:</strong> BMI between 25 and 29.9</li>
+                <li><strong>Obese:</strong> BMI 30 or above</li>
+                </ul>
+
+                <p>
+                These categories help identify potential health risks related to body weight.
+                </p>
+
+                <h2>Why Use an Online BMI Calculator?</h2>
+
+                <p>
+                Manual BMI calculation is easy, but it can become confusing when converting units.
+                An online BMI calculator automatically handles unit conversions and gives instant
+                results.
+                </p>
+
+                <p>
+                Online calculators are useful for regular BMI checks and quick health assessments.
+                </p>
+
+                <h2>Is BMI Calculation Accurate?</h2>
+
+                <p>
+                BMI calculation is accurate for general population screening, but it has limitations.
+                BMI does not measure body fat, muscle mass, or fat distribution.
+                </p>
+
+                <p>
+                Athletes and people with high muscle mass may have a high BMI even if they are healthy.
+                Similarly, people with normal BMI may still have high body fat.
+                </p>
+
+                <h2>Who Should Calculate BMI?</h2>
+
+                <p>
+                BMI calculation is suitable for most adults aged 18 years and above. It is commonly
+                used for health awareness and lifestyle planning.
+                </p>
+
+                <p>
+                BMI may not be accurate for children, pregnant women, elderly individuals, or
+                professional athletes. In such cases, other health assessments may be more suitable.
+                </p>
+
+                <h2>How Often Should You Calculate BMI?</h2>
+
+                <p>
+                You do not need to calculate BMI frequently. Checking BMI every few months is
+                sufficient for most adults, especially when working on weight management goals.
+                </p>
+
+                <p>
+                Sudden changes in BMI should always be discussed with a healthcare professional.
+                </p>
+
+                <h2>Benefits of Knowing How to Calculate BMI</h2>
+
+                <p>
+                Knowing how to calculate BMI helps you understand your body weight better and take
+                timely action to improve your health.
+                </p>
+
+                <ul>
+                <li>Helps identify unhealthy weight early</li>
+                <li>Supports better fitness and diet planning</li>
+                <li>Encourages health awareness</li>
+                <li>Useful for tracking progress over time</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>
+                Understanding how to calculate BMI is a valuable skill for anyone who wants to stay
+                aware of their health. While BMI is not a perfect measurement, it provides a helpful
+                starting point for understanding weight-related health risks.
+                </p>
+
+                <p>
+                For personalized health advice, always consult a qualified healthcare professional.
+                </p>
+
+
+            <div class="bmi-grid">
+
+                <a href="index.html" class="bmi-card">
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate your BMI instantly using height and weight.</p>
+                </a>
+
+                <a href="what-is-bmi.html" class="bmi-card">
+                    <h3>What Is BMI?</h3>
+                    <p>Understand the meaning, importance, and basics of Body Mass Index.</p>
+                </a>
+
+                <a href="bmi-chart.html" class="bmi-card">
+                    <h3>BMI Chart</h3>
+                    <p>Check BMI categories and see where your BMI falls.</p>
+                </a>
+
+                <a href="healthy-bmi-range.html" class="bmi-card">
+                    <h3>Healthy BMI Range</h3>
+                    <p>Learn what BMI range is considered healthy for adults.</p>
+                </a>
+
+                <a href="bmi-for-men-guide.html" class="bmi-card">
+                    <h3>BMI Guide for Men</h3>
+                    <p>Explore BMI standards and health tips specifically for men.</p>
+                </a>
+
+                <a href="bmi-for-women.html" class="bmi-card">
+                    <h3>BMI Guide for Women</h3>
+                    <p>Understand BMI range, chart, and health considerations for women.</p>
+                </a>
+
+                <a href="is-bmi-accurate.html" class="bmi-card">
+                    <h3>Is BMI Accurate?</h3>
+                    <p>Know how accurate BMI is and understand its limitations.</p>
+                </a>
+
+                <a href="how-to-reduce-bmi.html" class="bmi-card">
+                    <h3>How to Reduce BMI</h3>
+                    <p>Simple diet and lifestyle tips to reduce BMI naturally.</p>
+                </a>
+
+            </div>
+
+             <h2>Frequently Asked Questions (FAQs)</h2>
+
+            <h3>What is the easiest way to calculate BMI?</h3>
+            <p>
+            The easiest way to calculate BMI is by using an online BMI calculator. It automatically
+            converts height and weight units and provides instant results without manual calculation.
+            </p>
+
+            <h3>Can I calculate BMI at home?</h3>
+            <p>
+            Yes, BMI can be calculated at home using your height and weight. You can either use
+            the BMI formula manually or an online calculator for quick results.
+            </p>
+
+            <h3>What formula is used to calculate BMI?</h3>
+            <p>
+            The standard BMI formula is: weight (kg) divided by height squared (meters). When using
+            pounds and inches, the formula includes a conversion factor of 703.
+            </p>
+
+            <h3>Is BMI calculation the same for men and women?</h3>
+            <p>
+            Yes, the BMI formula is the same for adult men and women. However, body composition
+            differs, so BMI results should be interpreted carefully.
+            </p>
+
+            <h3>Is BMI calculation accurate?</h3>
+            <p>
+            BMI is accurate for general screening but does not measure body fat or muscle mass.
+            Athletes and muscular individuals may have higher BMI despite being healthy.
+            </p>
+
+            <h3>What is a healthy BMI value?</h3>
+            <p>
+            A healthy BMI range for most adults is between 18.5 and 24.9. Values outside this range
+            may indicate potential health risks.
+            </p>
+
+            <h3>How often should BMI be calculated?</h3>
+            <p>
+            Calculating BMI every few months is enough for most adults. Frequent checking is not
+            necessary unless you are actively managing your weight.
+            </p>
+
+            <h3>Can children calculate BMI the same way?</h3>
+            <p>
+            Children and teenagers use age- and gender-specific BMI percentiles. The standard BMI
+            calculation for adults is not directly applied to children.
+            </p>
+
+            <h3>Does BMI change with age?</h3>
+            <p>
+            BMI categories remain the same for adults, but body composition changes with age.
+            Therefore, BMI should be considered along with other health indicators.
+            </p>
+
+            <h3>Is BMI enough to judge overall health?</h3>
+            <p>
+            No, BMI is only a general guideline. Overall health depends on multiple factors such
+            as diet, physical activity, sleep, and mental well-being.
+            </p>
+
+        </section>
+
+
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2025 BMI Checker</p>
+
+            <p style="font-size:13px; color:#777; margin-top:8px;">
+            Disclaimer: This website provides informational content only and is not a substitute for professional medical advice.
+            </p>
+            
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
