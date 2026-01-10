@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bmichecker.fit/</loc>
     <priority>1.0</priority>
   </url>
-
-  <!-- Core Calculator Pages -->
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-cm.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-feet.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-inch.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-lb-cm.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-lb-feet.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-lb-inch.html</loc></url>
-
-  <!-- Gender Specific -->
   <url><loc>https://bmichecker.fit/bmi-calculator-men.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-women.html</loc></url>
-
-  <!-- Guides / Informational -->
   <url><loc>https://bmichecker.fit/bmi-chart.html</loc></url>
   <url><loc>https://bmichecker.fit/What-is-bmi.html</loc></url>
   <url><loc>https://bmichecker.fit/healthy-bmi-range.html</loc></url>
@@ -27,16 +19,7 @@
   <url><loc>https://bmichecker.fit/how-to-reduce-bmi.html</loc></url>
   <url><loc>https://bmichecker.fit/is-bmi-accurate.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-vs-body-fat.html</loc></url>
-  <url><loc>https://bmichecker.fit/bmi-limitations.html</loc></url>
-
-  <!-- Age / Group Based -->
-  <url><loc>https://bmichecker.fit/bmi-for-children.html</loc></url>
-  <url><loc>https://bmichecker.fit/bmi-for-men-guide.html</loc></url>
-  <url><loc>https://bmichecker.fit/bmi-for-seniors.html</loc></url>
-
-  <!-- Utility Pages -->
   <url><loc>https://bmichecker.fit/about.html</loc></url>
   <url><loc>https://bmichecker.fit/contact.html</loc></url>
   <url><loc>https://bmichecker.fit/privacy.html</loc></url>
-
 </urlset>
