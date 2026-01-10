@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bmichecker.fit/</loc>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://bmichecker.fit/</loc><priority>1.0</priority></url>
+  <url><loc>https://bmichecker.fit/index.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-cm.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-feet.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-calculator-kg-inch.html</loc></url>
@@ -19,6 +17,11 @@
   <url><loc>https://bmichecker.fit/how-to-reduce-bmi.html</loc></url>
   <url><loc>https://bmichecker.fit/is-bmi-accurate.html</loc></url>
   <url><loc>https://bmichecker.fit/bmi-vs-body-fat.html</loc></url>
+  <url><loc>https://bmichecker.fit/bmi-for-children.html</loc></url>
+  <url><loc>https://bmichecker.fit/bmi-for-men-guide.html</loc></url>
+  <url><loc>https://bmichecker.fit/bmi-for-seniors.html</loc></url>
+  <url><loc>https://bmichecker.fit/bmi-for-women.html</loc></url>
+  <url><loc>https://bmichecker.fit/bmi-limitations.html</loc></url>
   <url><loc>https://bmichecker.fit/about.html</loc></url>
   <url><loc>https://bmichecker.fit/contact.html</loc></url>
   <url><loc>https://bmichecker.fit/privacy.html</loc></url>
